@@ -1,0 +1,118 @@
+.file {
+  display: inline-block;
+}
+
+#formFileMultiple {
+  margin-left: 6rem;
+  margin-top: 1rem;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: '';
+  height: 13px;
+  width: 14px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: green;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 2px green;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(28px);
+  -ms-transform: translateX(28px);
+  transform: translateX(28px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 23px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.cancel {
+  border-radius: 14%;
+  border-color: green;
+  background-color: white;
+  color: green;
+  padding: 5px;
+  border: 2px solid green;
+  width: 6rem;
+  margin-right: 16px;
+}
+
+.save {
+  border-radius: 14%;
+  border-color: green;
+  background-color: green;
+  color: white;
+  padding: 5px;
+  width: 6rem;
+  border: none;
+}
+
+.buttons {
+  margin-left: 40rem;
+}
+
+.form_fill {
+  margin-left: 21rem;
+  position: absolute;
+  top: 18rem;
+}
+
+.container1 {
+  border-radius: 2rem;
+  background-color: whitesmoke;
+  width: 53rem;
+  margin-left: 16rem;
+  padding: 5px;
+  display: inline-block;
+  margin-top: 2rem;
+}
+body {
+  background-color: rgb(234, 241, 244);
+}
+.emp {
+  width: 8rem;
+  border-radius: 50%;
+  border: 2px double;
+  margin-left: 8rem;
+}
